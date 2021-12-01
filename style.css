@@ -43,7 +43,7 @@ body {
 
 .main-section-buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .log-in-div {
@@ -73,6 +73,7 @@ body {
   background-image: linear-gradient(to right, #2f3453, #242845);
   color: #949ec0;
   border: none;
+  margin-right: 15px;
 }
 
 .Sign-in-button {
@@ -83,6 +84,7 @@ body {
   background-image: linear-gradient(to right, #3887fe, #3ba0ff, #5fb2ff);
   color: #ffffff;
   border: none;
+  margin-left: 15px;
 }
 
 .valuet-div h1 {
