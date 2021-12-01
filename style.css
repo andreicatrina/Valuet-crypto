@@ -46,12 +46,23 @@ body {
   justify-content: space-around;
 }
 
+.log-in-div {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 160px;
+  padding-top: 180px;
+  background-image: linear-gradient(to right, #1e1156, #1c2340);
+  border-radius: 8px;
+  box-shadow: #1c2340 1px 8px 12px;
+}
+
 .log-in-div h2 {
   line-height: 42px;
   font-size: 36px;
   font-weight: 700;
   display: flex;
   justify-content: center;
+  color: #fff;
 }
 
 .sign-up-button {
@@ -93,6 +104,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 24px;
+  color: #fff;
 }
 .underline-div {
   display: flex;
