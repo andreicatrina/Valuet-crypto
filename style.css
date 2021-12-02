@@ -6,6 +6,8 @@
 
 body {
   margin: 0;
+  font-family: "Open sans";
+  background-image: linear-gradient(to right, #20135c, #140739);
 }
 
 .main-section {
@@ -39,6 +41,7 @@ body {
   background-color: #2e3558;
   color: #616a8b;
   padding-left: 67px;
+  border: none;
 }
 
 .main-section-buttons {
