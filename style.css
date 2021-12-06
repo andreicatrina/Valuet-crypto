@@ -15,6 +15,8 @@ body {
   justify-content: center;
   background-image: linear-gradient(to right, #20135c, #140739);
   color: #949ec0;
+  height: 100%;
+  align-items: center;
 }
 
 .main-div {
@@ -22,13 +24,11 @@ body {
   align-items: center;
   justify-content: space-around;
   width: 1366px;
-  height: 768;
 }
 
 .main-inputs {
   display: flex;
-  gap: 26px;
-  flex-flow: column;
+  flex-direction: column;
   margin-top: 62px;
   margin-bottom: 64px;
 }
@@ -42,6 +42,13 @@ body {
   color: #616a8b;
   padding-left: 67px;
   border: none;
+  margin-bottom: 26px;
+  border-radius: 8px;
+}
+
+.main-inputs input:focus {
+  outline: none;
+  border: 2px solid #3ba0ff;
 }
 
 .main-section-buttons {
@@ -49,17 +56,21 @@ body {
   justify-content: center;
 }
 
-.log-in-div {
+.auth-div {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 160px;
-  padding-top: 180px;
-  background-image: linear-gradient(to right, #1e1156, #1c2340);
+  padding-top: 80px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(30, 17, 86, 0.9),
+    rgba(14, 8, 55, 0.9)
+  );
   border-radius: 8px;
-  box-shadow: #1c2340 1px 8px 12px;
+  box-shadow: #0e0837 0px 12px 24px;
 }
 
-.log-in-div h2 {
+.auth-div h2 {
   line-height: 42px;
   font-size: 36px;
   font-weight: 700;
@@ -77,6 +88,11 @@ body {
   color: #949ec0;
   border: none;
   margin-right: 15px;
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
 }
 
 .Sign-in-button {
@@ -88,6 +104,7 @@ body {
   color: #ffffff;
   border: none;
   margin-left: 15px;
+  font-weight: 700;
 }
 
 .valuet-div h1 {

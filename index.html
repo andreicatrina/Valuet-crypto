@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Valuet-crypto-wallet</title>
+
     <meta name="description" content="Crypto Wallet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,16 +15,24 @@
     <header></header>
     <section class="main-section">
       <div class="main-div">
-        <div class="log-in-div">
-          <h2>Welcome!</h2>
-          <div class="main-inputs">
-            <input type="text" placeholder="E-mail or Login" />
-            <input type="text" placeholder="••••••" />
-          </div>
-          <div class="main-section-buttons">
-            <button class="Sign-up-button" type="button">Sign up</button>
-            <button class="Sign-in-button" type="button">Sign in</button>
-          </div>
+        <div class="auth-div">
+          <form id="sign-up-form">
+            <h2>Welcome!</h2>
+            <div class="main-inputs">
+              <input type="text" placeholder="E-mail or Login" />
+              <input type="text" placeholder="••••••" />
+            </div>
+            <div class="main-section-buttons">
+              <button
+                onclick="myFunction()"
+                class="Sign-up-button"
+                type="button"
+              >
+                Sign up
+              </button>
+              <button class="Sign-in-button" type="button">Sign in</button>
+            </div>
+          </form>
         </div>
         <div class="valuet-div">
           <h1>VALUET</h1>
@@ -34,5 +43,8 @@
         </div>
       </div>
     </section>
+    <footer>
+      <script src="script.js"></script>
+    </footer>
   </body>
 </html>
