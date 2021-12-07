@@ -33,7 +33,27 @@ body {
   margin-bottom: 64px;
 }
 
+.main-inputs-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 62px;
+  margin-bottom: 64px;
+}
+
 .main-inputs input {
+  width: 380px;
+  height: 58px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #2e3558;
+  color: #616a8b;
+  padding-left: 67px;
+  border: none;
+  margin-bottom: 26px;
+  border-radius: 8px;
+}
+
+.main-inputs-2 input {
   width: 380px;
   height: 58px;
   font-size: 16px;
@@ -51,7 +71,17 @@ body {
   border: 2px solid #3ba0ff;
 }
 
+.main-inputs-2 input:focus {
+  outline: none;
+  border: 2px solid #3ba0ff;
+}
+
 .main-section-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-section-buttons {
   display: flex;
   justify-content: center;
 }
@@ -81,6 +111,18 @@ body {
 
 .sign-up-button {
   width: 105px;
+  height: 42px;
+  border-radius: 8px;
+  font-size: 16px;
+  background-image: linear-gradient(to right, #2f3453, #242845);
+  color: #949ec0;
+  border: none;
+  margin-right: 15px;
+  font-weight: 700;
+}
+
+.Create-account-button {
+  width: 140px;
   height: 42px;
   border-radius: 8px;
   font-size: 16px;

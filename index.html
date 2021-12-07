@@ -16,7 +16,7 @@
     <section class="main-section">
       <div class="main-div">
         <div class="auth-div">
-          <form id="sign-up-form">
+          <form id="sign-in-form">
             <h2>Welcome!</h2>
             <div class="main-inputs">
               <input type="text" placeholder="E-mail or Login" />
@@ -24,13 +24,27 @@
             </div>
             <div class="main-section-buttons">
               <button
-                onclick="myFunction()"
+                onclick="switchForms()"
                 class="Sign-up-button"
                 type="button"
               >
                 Sign up
               </button>
               <button class="Sign-in-button" type="button">Sign in</button>
+            </div>
+          </form>
+          <form id="sign-up-form" hidden>
+            <h2>Create Account</h2>
+            <div class="main-inputs-2">
+              <input type="text" placeholder="E-mail" />
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Password" />
+              <input type="text" placeholder="Confirm Password" />
+            </div>
+            <div class="sign-up-section-buttons">
+              <button class="Create-account-button" type="button">
+                Create account
+              </button>
             </div>
           </form>
         </div>
