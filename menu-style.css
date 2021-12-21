@@ -16,6 +16,7 @@ header {
   justify-content: space-between;
   width: 220px;
   height: 100%;
+  max-height: 1050px;
 }
 
 .menu-links-a {
@@ -82,4 +83,13 @@ header {
   width: 100px;
   margin-top: 6px;
   margin-bottom: 60px;
+}
+
+.section-parent {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.search-icon {
+  height: 20px;
 }
