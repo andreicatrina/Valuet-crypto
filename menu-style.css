@@ -1,0 +1,22 @@
+header {
+}
+
+.menu-container {
+  max-width: 300px;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  width: 300;
+}
+
+.menu-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-search-container {
+  display: flex;
+  justify-content: left;
+}
