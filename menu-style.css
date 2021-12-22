@@ -3,20 +3,27 @@ header {
 
 .menu-container {
   display: flex;
-  max-width: 200px;
+  max-width: 220px;
   width: 100%;
+  background-image: linear-gradient(
+    180deg,
+    rgba(30, 17, 86, 0.9),
+    rgba(14, 8, 55, 0.9)
+  );
+  border-radius: 8px;
+  box-shadow: #0e0837 0px 12px 24px;
 }
 
 .menu-nav {
+  /* height: 100%; */
 }
 
 .menu-links {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 220px;
-  height: 100%;
-  max-height: 1050px;
+  width: 100%;
+  /* height: 100%; */
 }
 
 .menu-links-a {
@@ -90,6 +97,29 @@ header {
   /* justify-content: space-between; */
 }
 
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  margin-top: 32px;
+  outline: 1px solid #161245;
+  border-radius: 25px;
+}
+
+.search-bar input {
+  background-color: #161245;
+  border: none;
+  height: 30px;
+}
+
 .search-icon {
-  height: 20px;
+  height: 24px;
+  background-color: #161245;
+}
+
+.transactions-container {
+  margin-top: 100px;
+
+  flex-grow: 2;
 }
