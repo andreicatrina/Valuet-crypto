@@ -76,6 +76,10 @@ header {
   margin-top: 30px;
 }
 
+.header-search {
+  max-width: 100%;
+}
+
 .text-underline-div {
   display: flex;
   justify-content: center;
@@ -98,7 +102,7 @@ header {
   display: flex;
   align-items: center;
   margin-top: 32px;
-  margin-left: 32px;
+  /* margin-left: 32px; */
   margin-bottom: 24px;
 }
 
@@ -127,14 +131,18 @@ header {
 .transactions-container {
   display: flex;
   flex-direction: column;
-
+  width: 1400px;
+  margin-right: 32px;
+  margin-left: 32px;
   /* flex-grow: 2; */
+  /* max-width: 100%; */
 }
 
 .transactions-export-div {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+  max-width: 100%;
 }
 
 .export-button {
@@ -162,7 +170,7 @@ header {
 }
 
 .transactions-export-div h2 {
-  margin-left: 32px;
+  /* margin-left: 32px; */
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
@@ -175,8 +183,9 @@ header {
 .line-header {
   height: 2px;
   background-color: #2d317a;
-  width: 1084px;
-  margin-left: 32px;
+  /* width: 1084px; */
+  max-width: 100%;
+  /* margin-left: 32px; */
   margin-right: 32px;
   margin-top: 6px;
   margin-bottom: 28px;
@@ -186,13 +195,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 100%;
 }
 
 .total {
   /* display: flex; */
   /* width: 44px;
   height: 25px; */
-  margin-left: 32px;
+  /* margin-left: 32px; */
   margin-bottom: 26px;
   font-family: Open Sans;
   font-style: normal;
@@ -272,42 +282,45 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 1084px;
+  max-width: 100%;
+  /* width: 1084px; */
   height: 62px;
   background: #242050;
   /* opacity: 0.3; */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   margin-bottom: 16px;
-  margin-left: 32px;
+  /* margin-left: 32px; */
 }
 
 .transactions-history2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 1084px;
+  max-width: 100%;
+  /* width: 1084px; */
   height: 62px;
   background: #242050;
   /* opacity: 0.3; */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   margin-bottom: 16px;
-  margin-left: 32px;
+  /* margin-left: 32px; */
 }
 
 .transactions-history3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 1084px;
+  max-width: 100%;
+  /* width: 1084px; */
   height: 62px;
   background: #242050;
   /* opacity: 0.3; */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   margin-bottom: 16px;
-  margin-left: 32px;
+  /* margin-left: 32px; */
 }
 
 .hour {
@@ -390,4 +403,6 @@ header {
 
 .crypto-img {
   height: 30px;
+  border: 1px solid #25abe9;
+  border-radius: 50px;
 }
