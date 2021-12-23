@@ -134,6 +134,7 @@ header {
 .transactions-export-div {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .export-button {
@@ -178,18 +179,21 @@ header {
   margin-left: 32px;
   margin-right: 32px;
   margin-top: 6px;
-  margin-bottom: 52px;
+  margin-bottom: 28px;
 }
 
 .total-transactions {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .total {
   /* display: flex; */
-  width: 44px;
-  height: 25px;
+  /* width: 44px;
+  height: 25px; */
+  margin-left: 32px;
+  margin-bottom: 26px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
@@ -201,10 +205,65 @@ header {
 
 .filter-transactions {
   display: flex;
+
+  /* margin-right: 32px; */
+  align-items: center;
+}
+
+.all {
+  width: 35px;
+  height: 20px;
+  background: #32395e;
+  border-radius: 5px;
+  margin-right: 24px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #616a8b;
+  text-align: center;
+  color: #ffffff;
+  border: 2px solid #1288e8;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+
+.send {
+  width: 35px;
+  height: 20px;
+
+  border-radius: 5px;
+  margin-right: 24px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: capitalize;
+
+  color: #616a8b;
+}
+
+.recent {
+  width: 49px;
+  height: 20px;
+
+  border-radius: 5px;
+  margin-right: 24px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: capitalize;
+
+  color: #616a8b;
 }
 
 .total-transactions h2 {
-  margin-top: 26px;
   width: 100px;
   height: 25px;
 }
@@ -212,19 +271,112 @@ header {
 .transactions-history1 {
   display: flex;
   justify-content: space-around;
-  /* margin-top: 50px; */
+  align-items: center;
+  width: 1084px;
+  height: 62px;
+  background: #242050;
+  /* opacity: 0.3; */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  margin-left: 32px;
 }
 
 .transactions-history2 {
   display: flex;
   justify-content: space-around;
-  /* margin-top: 50px; */
+  align-items: center;
+  width: 1084px;
+  height: 62px;
+  background: #242050;
+  /* opacity: 0.3; */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  margin-left: 32px;
 }
 
 .transactions-history3 {
   display: flex;
   justify-content: space-around;
-  /* margin-top: 50px; */
+  align-items: center;
+  width: 1084px;
+  height: 62px;
+  background: #242050;
+  /* opacity: 0.3; */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  margin-left: 32px;
+}
+
+.hour {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.transaction-id {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.quantity-currency {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+.transaction-status-waiting {
+  text-align: center;
+  background: #32395e;
+  border-radius: 5px;
+  width: 85px;
+  height: 24px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #ffffff;
+  /* #32395e */
+}
+
+.transaction-status-error {
+  text-align: center;
+  background: #f35050;
+  border-radius: 5px;
+  width: 85px;
+  height: 24px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.transaction-status-completed {
+  text-align: center;
+  background: rgba(0, 232, 172, 0.75);
+  border-radius: 5px;
+  width: 85px;
+  height: 24px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #ffffff;
 }
 
 .green-arrow {
@@ -233,7 +385,7 @@ header {
 
 .red-arrow {
   height: 30px;
-  width: 40px;
+  width: 30px;
 }
 
 .crypto-img {
