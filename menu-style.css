@@ -4,8 +4,11 @@ header {
 .menu-container {
   display: flex;
   flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
   width: 220px;
-
   background-image: linear-gradient(
     180deg,
     rgba(30, 17, 86, 0.9),
@@ -18,7 +21,7 @@ header {
 .menu-links {
   display: flex;
   flex-direction: column;
-  /* flex-grow: 1; */
+  flex-grow: 1;
   justify-content: space-between;
   width: 100%;
 }
@@ -53,11 +56,6 @@ header {
 }
 .menu-footer a {
   /* margin-top: 30px; */
-}
-
-.menu-search-container {
-  display: flex;
-  justify-content: left;
 }
 
 .menu-container h1 {
@@ -131,9 +129,10 @@ header {
 .transactions-container {
   display: flex;
   flex-direction: column;
-  width: 1400px;
+
+  width: 100%;
   margin-right: 32px;
-  margin-left: 32px;
+  margin-left: 252px;
   /* flex-grow: 2; */
   /* max-width: 100%; */
 }

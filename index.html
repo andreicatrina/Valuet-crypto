@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Open+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <header></header>
@@ -19,9 +20,14 @@
           <form id="sign-in-form">
             <h2>Welcome!</h2>
             <div class="main-inputs">
-              <input type="text" placeholder="E-mail or Login" />
-              <input type="text" placeholder="••••••" />
+              <input id="email" type="text" placeholder="E-mail or Login" />
+              <input
+                id="password"
+                type="password"
+                placeholder="Type your password"
+              />
             </div>
+            <p id="sign-in-error" class="hidden"></p>
             <div class="main-section-buttons">
               <button
                 onclick="switchForms()"
@@ -30,19 +36,34 @@
               >
                 Sign up
               </button>
-              <button class="Sign-in-button" type="button">Sign in</button>
+              <button
+                onclick="signinAction()"
+                class="Sign-in-button"
+                type="button"
+              >
+                Sign in
+              </button>
             </div>
           </form>
           <form id="sign-up-form" class="hidden">
             <h2>Create Account</h2>
             <div class="main-inputs-2">
-              <input type="text" placeholder="E-mail" />
-              <input type="text" placeholder="Name" />
-              <input type="text" placeholder="Password" />
-              <input type="text" placeholder="Confirm Password" />
+              <input id="email" type="text" placeholder="E-mail" />
+              <input id="name" type="text" placeholder="Name" />
+              <input id="password" type="password" placeholder="Password" />
+              <input
+                id="confirm-password"
+                type="password"
+                placeholder="Confirm Password"
+              />
             </div>
+            <p id="sign-up-error" class="hidden"></p>
             <div class="sign-up-section-buttons">
-              <button class="Create-account-button" type="button">
+              <button
+                onclick="createAccount()"
+                class="create-account-button"
+                type="button"
+              >
                 Create account
               </button>
             </div>
