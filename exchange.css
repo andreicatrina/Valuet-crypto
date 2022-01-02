@@ -1,0 +1,74 @@
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open sans";
+  background-image: linear-gradient(to right, #20135c, #140739);
+} */
+
+.section-parent-exchange {
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: space-between; */
+}
+
+.exchange-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 32px;
+  margin-left: 252px;
+}
+
+.header-search-container {
+  display: flex;
+  flex-direction: column;
+
+  /* flex-grow: 2; */
+  /* max-width: 100%; */
+}
+
+.subtitle-container {
+}
+
+.from-to-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.from-to-div p {
+  color: #ffffff;
+}
+
+.exchange-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.coin-exchange-1 {
+  width: 500px;
+  height: 225px;
+}
+
+.coin {
+  display: flex;
+}
+
+.coin-img {
+  width: 70px;
+  height: 70px;
+  margin-left: 90px;
+}
+
+.input-sum input {
+  width: 300px;
+  height: 45px;
+}
+
+.coin {
+  display: flex;
+}
+
+.coin p {
+  margin-right: 90px;
+}
