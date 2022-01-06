@@ -194,3 +194,9 @@ body {
   padding: 16px;
   margin-bottom: 24px;
 }
+
+@media all and (max-width: 600px) {
+  .valuet-div {
+    display: none;
+  }
+}

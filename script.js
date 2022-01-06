@@ -1,4 +1,6 @@
 let apiServer = "http://127.0.0.1:3000/api";
+let element2 = document.getElementById("sign-up-form");
+let element = document.getElementById("sign-in-form");
 
 let switchForms = function () {
   // console.log("Click");
@@ -22,6 +24,7 @@ let signinAction = async function () {
       password: passwordElement,
     });
     console.log(apiResponse.data);
+    window.location.href = "transactions-page.html";
   } catch (error) {
     let errorMessage = error.response.data.message;
     console.log(errorMessage);
@@ -30,14 +33,36 @@ let signinAction = async function () {
   }
 };
 
-let createAccount = function () {
-  document.getElementById("sign-up-error").classList.add("hidden");
+let createAccount = async function () {
+  // document.getElementById("sign-up-error").classList.add("hidden");
   let isFormValid = validateSignUpForm();
   if (!isFormValid) {
     return;
   }
 
   // TODO : Make server request
+  let emailElement = document.querySelector("#sign-up-form #email").value;
+  let nameElement = document.querySelector("#sign-up-form #name").value;
+  let passwordElement = document.querySelector("#sign-up-form #password").value;
+
+  try {
+    document.getElementById("sign-up-error").classList.add("hidden");
+
+    let apiResponse = await axios.post(apiServer + "/auth/sign-up", {
+      email: emailElement,
+      name: nameElement,
+      password: passwordElement,
+    });
+    console.log(apiResponse.data);
+    element2.classList.add("hidden");
+    element.classList.remove("hidden");
+    window.location.href = "index.html";
+  } catch (error) {
+    let errorMessage = error.response.data.message;
+    console.log(errorMessage);
+    document.getElementById("sign-up-error").innerHTML = errorMessage;
+    document.getElementById("sign-up-error").classList.remove("hidden");
+  }
 };
 
 function validateSignUpForm() {
