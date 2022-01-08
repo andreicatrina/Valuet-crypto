@@ -410,3 +410,19 @@ header {
   border: 1px solid #25abe9;
   border-radius: 50px;
 }
+
+@media all and (max-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+
+  .transactions-container {
+    margin-left: 32px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .transaction-id {
+    display: none;
+  }
+}
