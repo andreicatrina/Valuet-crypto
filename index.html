@@ -1,6 +1,8 @@
 <html>
   <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Valuet-crypto-wallet</title>
+
     <meta name="description" content="Crypto Wallet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -9,21 +11,64 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Open+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <header></header>
     <section class="main-section">
       <div class="main-div">
-        <div class="log-in-div">
-          <h2>Welcome!</h2>
-          <div class="main-inputs">
-            <input type="text" placeholder="E-mail or Login" />
-            <input type="text" placeholder="••••••" />
-          </div>
-          <div class="main-section-buttons">
-            <button class="Sign-up-button" type="button">Sign up</button>
-            <button class="Sign-in-button" type="button">Sign in</button>
-          </div>
+        <div class="auth-div">
+          <form id="sign-in-form">
+            <h2 class="h2-tobe-replaced"><span>Welcome!</span></h2>
+            <div class="main-inputs">
+              <input id="email" type="text" placeholder="E-mail or Login" />
+              <input
+                id="password"
+                type="password"
+                placeholder="Type your password"
+              />
+            </div>
+            <p id="sign-in-error" class="hidden"></p>
+            <div class="main-section-buttons">
+              <button
+                onclick="switchForms()"
+                class="Sign-up-button"
+                type="button"
+              >
+                Sign up
+              </button>
+              <button
+                onclick="signinAction()"
+                class="Sign-in-button"
+                type="button"
+              >
+                Sign in
+              </button>
+            </div>
+          </form>
+          <form id="sign-up-form" class="hidden">
+            <h2>Create Account</h2>
+            <div class="main-inputs-2">
+              <input id="email" type="text" placeholder="E-mail" />
+              <input id="name" type="text" placeholder="Name" />
+              <input id="password" type="password" placeholder="Password" />
+              <input
+                id="confirm-password"
+                type="password"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <p id="sign-up-error" class="hidden"></p>
+            <div class="sign-up-section-buttons">
+              <button
+                onclick="createAccount()"
+                class="create-account-button"
+                type="button"
+              >
+                Create account
+              </button>
+            </div>
+          </form>
         </div>
         <div class="valuet-div">
           <h1>VALUET</h1>
@@ -34,5 +79,8 @@
         </div>
       </div>
     </section>
+    <footer>
+      <script src="script.js"></script>
+    </footer>
   </body>
 </html>

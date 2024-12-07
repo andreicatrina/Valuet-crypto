@@ -15,6 +15,8 @@ body {
   justify-content: center;
   background-image: linear-gradient(to right, #20135c, #140739);
   color: #949ec0;
+  height: 100%;
+  align-items: center;
 }
 
 .main-div {
@@ -22,18 +24,40 @@ body {
   align-items: center;
   justify-content: space-around;
   width: 1366px;
-  height: 768;
+  padding: 0 24px;
 }
 
 .main-inputs {
   display: flex;
-  gap: 26px;
-  flex-flow: column;
+  flex-direction: column;
   margin-top: 62px;
-  margin-bottom: 64px;
+  /* align-items: stretch; */
+}
+
+.main-inputs-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 62px;
 }
 
 .main-inputs input {
+  width: 100%;
+  height: 58px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #2e3558;
+  color: #ffffff;
+  padding-left: 67px;
+  border: none;
+  margin-bottom: 26px;
+  border-radius: 8px;
+}
+
+.main-inputs input::placeholder {
+  color: #616a8b;
+}
+
+.main-inputs-2 input {
   width: 380px;
   height: 58px;
   font-size: 16px;
@@ -42,6 +66,18 @@ body {
   color: #616a8b;
   padding-left: 67px;
   border: none;
+  margin-bottom: 26px;
+  border-radius: 8px;
+}
+
+.main-inputs input:focus {
+  outline: none;
+  border: 2px solid #3ba0ff;
+}
+
+.main-inputs-2 input:focus {
+  outline: none;
+  border: 2px solid #3ba0ff;
 }
 
 .main-section-buttons {
@@ -49,17 +85,28 @@ body {
   justify-content: center;
 }
 
-.log-in-div {
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 160px;
-  padding-top: 180px;
-  background-image: linear-gradient(to right, #1e1156, #1c2340);
-  border-radius: 8px;
-  box-shadow: #1c2340 1px 8px 12px;
+.sign-up-section-buttons {
+  display: flex;
+  justify-content: center;
 }
 
-.log-in-div h2 {
+.auth-div {
+  width: 100%;
+  max-width: 420px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 96px;
+  padding-top: 80px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(30, 17, 86, 0.9),
+    rgba(14, 8, 55, 0.9)
+  );
+  border-radius: 8px;
+  box-shadow: #0e0837 0px 12px 24px;
+}
+
+.auth-div h2 {
   line-height: 42px;
   font-size: 36px;
   font-weight: 700;
@@ -69,7 +116,7 @@ body {
 }
 
 .sign-up-button {
-  width: 105px;
+  padding: 0 24px;
   height: 42px;
   border-radius: 8px;
   font-size: 16px;
@@ -77,10 +124,27 @@ body {
   color: #949ec0;
   border: none;
   margin-right: 15px;
+  font-weight: 700;
+}
+
+.create-account-button {
+  padding: 0 24px;
+  height: 42px;
+  border-radius: 8px;
+  font-size: 16px;
+  background-image: linear-gradient(to right, #2f3453, #242845);
+  color: #949ec0;
+  border: none;
+  margin-right: 15px;
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
 }
 
 .Sign-in-button {
-  width: 105px;
+  padding: 0 24px;
   height: 42px;
   border-radius: 8px;
   font-size: 16px;
@@ -88,6 +152,7 @@ body {
   color: #ffffff;
   border: none;
   margin-left: 15px;
+  font-weight: 700;
 }
 
 .valuet-div h1 {
@@ -121,4 +186,56 @@ body {
   background-color: #1288e8;
   width: 175px;
   margin-top: 6px;
+}
+
+#sign-in-error,
+#sign-up-error {
+  text-align: center;
+  border: 1px solid rgb(243, 80, 80);
+  border-radius: 6px;
+  background-color: rgba(243, 80, 80, 0.1);
+  color: rgba(243, 80, 80, 1);
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+@media all and (max-width: 768px) {
+  .valuet-div {
+    display: none;
+    align-self: center;
+  }
+
+  .auth-div h2 {
+    line-height: 42px;
+    font-size: 36px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    /* color: #fff; */
+    background: -webkit-linear-gradient(#3887fe, #3ba0ff, #5fb2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .auth-div {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 48px;
+    padding-top: 40px;
+  }
+
+  .h2-tobe-replaced span {
+    display: none;
+  }
+
+  .h2-tobe-replaced::after {
+    content: "Valuet";
+    line-height: 42px;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .main-inputs {
+    margin-top: 31px;
+  }
 }
